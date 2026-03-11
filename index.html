@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>老人照護 App 介面</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="header">
+            <h2>Latest readings</h2>
+            <div class="header-icons"><img src="images/notice.png" alt="notice 圖示" class="card-image-icon">
+            <img src="images/update.png" alt="update 圖示" class="card-image-icon">
+        <img src="images/i.png" alt="i 圖示" class="card-image-icon">
+    </div>
+        </div>
+
+        <div class="location-card">
+            <div class="location-info">
+                <span>📍 Latest Location</span>
+                <p>Location: [address]</p>
+                <small>X km from home</small>
+            </div>
+            <div class="location-map-placeholder"></div>
+        </div>
+
+        <div class="features-grid">
+            <div class="card tall">
+                <div class="card-icon"><img src="images/todolist.png" alt="To-Do 圖示" class="card-image-icon"></div>
+                <h3>To-Do</h3>
+                <div class="big-number">0 / 0</div>
+                <span>finished</span>
+            </div>
+
+            <div class="card small">
+                <div class="card-content-row">
+                    <span><img src="images/steps.png" alt="腳印 圖示" class="card-image-icon"></span>
+                    <div>
+                        <span class="value">0</span>
+                        <small>steps</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card small">
+                <div class="card-content-row">
+                    <span><img src="images/bpm.png" alt="心臟 圖示" class="card-image-icon"></span>
+                    <div>
+                        <span class="value">0</span>
+                        <small>BPM</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon-circle"><img src="images/clockinout.png" alt="clockinout 圖示" class="card-image-icon"></div>
+                <h3>Clock<br>in / out</h3>
+            </div>
+
+            <div class="card call-card">
+                <h3><img src="images/call.png" alt="call 圖示" class="card-image-icon"> Call</h3>
+                <button class="user-btn"><img src="images/people.png" alt="people 圖示" class="card-image-icon"> User1</button>
+                <button class="user-btn"><img src="images/people.png" alt="people 圖示" class="card-image-icon"> User2</button>
+                <button class="user-btn"><img src="images/people.png" alt="people 圖示" class="card-image-icon"> User3</button>
+            </div>
+
+            <div class="card">
+                <div class="card-icon-circle"><img src="images/changelocation.png" alt="Change location 圖示" class="card-image-icon"></div>
+                <h3>Change<br>location</h3>
+            </div>
+        </div>
+
+        <nav class="bottom-nav">
+            <div class="nav-item active"><img src="images/home_selected.png" alt="homeSelected 圖示" class="card-image-icon"><br>Home</div>
+            <div class="nav-item"><img src="images/ai.png" alt="AI Assistant 圖示" class="card-image-icon"><br>AI Assistant</div>
+            <div class="nav-item"><img src="images/health.png" alt="Health 圖示" class="card-image-icon"><br>Health</div>
+            <div class="nav-item"><img src="images/others.png" alt="Others 圖示" class="card-image-icon"><br>Others</div>
+        </nav>
+    </div>
+</body>
+</html>
