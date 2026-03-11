@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>老人照護 App 介面</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
     <div class="app-container">
@@ -80,3 +81,11 @@
     </div>
 </body>
 </html>
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js")
+    .then(function() {
+      console.log("Service Worker Registered");
+    });
+}
+</script>
